@@ -9,6 +9,15 @@ The core idea is simple:
 **Listen → Understand → Respond → Detect Interruption → Stop Old Response → Process Latest Instruction → Respond Again**
 
 ---
+## 🔗 Project Links
+
+### 🎥 Demo Video
+[Watch the Demo Video](https://drive.google.com/file/d/1IxBOsLQzHNXutcLhtJ6FpqbgqXagA7J9/view?usp=drivesdk)
+
+### 💻 GitHub Repository
+[View Source Code](https://github.com/Nirbhay042/dataforge-rime-voice-agent)
+
+---
 
 ## 🎯 Problem Statement
 
