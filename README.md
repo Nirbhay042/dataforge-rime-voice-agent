@@ -367,7 +367,7 @@ python -m venv venv
 Activate it:
 
 ```bash
-venv\Scripts\activate
+.\venv\Scripts\Activate.ps1
 ```
 
 ### 3. Install dependencies
