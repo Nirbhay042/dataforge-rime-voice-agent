@@ -35,7 +35,7 @@ gemini_client = genai.Client(
 # ======================================================
 
 # Current model
-GEMINI_MODEL = "gemini-3.5-flash-lite"
+GEMINI_MODEL = "gemini-2.5-flash-lite"
 
 
 # ======================================================
