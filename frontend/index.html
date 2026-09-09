@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DataForge | Voice Agent</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <!-- LOGO -->
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div>
+                <div class="brand-name">
+                    DATAFORGE
+                </div>
+
+                <div class="brand-subtitle">
+                    VOICE INTELLIGENCE
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="nav-section">
+
+            <div class="nav-title">
+                WORKSPACE
+            </div>
+
+
+            <button class="nav-item">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </button>
+
+
+            <button class="nav-item active">
+                <span class="nav-icon">◉</span>
+                Live Session
+            </button>
+
+
+            <button class="nav-item">
+                <span class="nav-icon">◇</span>
+                Capabilities
+            </button>
+
+
+            <button class="nav-item">
+                <span class="nav-icon">▥</span>
+                Analytics
+            </button>
+
+
+            <button class="nav-item">
+                <span class="nav-icon">⚙</span>
+                Settings
+            </button>
+
+        </div>
+
+
+        <!-- RIME -->
+
+        <div class="rime-card">
+
+            <div class="rime-icon">
+                R
+            </div>
+
+            <div class="rime-info">
+
+                <div class="rime-label">
+                    RIME ENGINE
+                </div>
+
+                <div class="rime-status">
+                    <span></span>
+                    Speech Online
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- USER -->
+
+        <div class="user-card">
+
+            <div class="user-avatar">
+                DF
+            </div>
+
+            <div class="user-info">
+
+                <div class="user-name">
+                    DataForge AI
+                </div>
+
+                <div class="user-version">
+                    v1.0.0
+                </div>
+
+            </div>
+
+            <div class="more">
+                ⋮
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div>
+
+                <div class="small-heading">
+                    LIVE VOICE SESSION
+                </div>
+
+                <h1>
+                    DataForge
+                </h1>
+
+            </div>
+
+
+            <div class="online-status">
+
+                <span class="online-dot"></span>
+
+                ONLINE
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= VOICE AREA ================= -->
+
+        <section class="voice-area">
+
+            <!-- LEFT WAVEFORM -->
+
+            <div class="side-wave left-wave">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+            <!-- VOICE ORB -->
+
+            <div class="orb-container">
+
+                <div class="orb-glow"></div>
+
+                <div class="orb-ring ring-1"></div>
+                <div class="orb-ring ring-2"></div>
+                <div class="orb-ring ring-3"></div>
+
+
+                <div
+                    class="voice-orb"
+                    id="voiceOrb"
+                >
+
+                    <div class="orb-inner">
+
+                        <div class="microphone">
+                            🎙
+                        </div>
+
+                        <div
+                            class="orb-status"
+                            id="orbStatus"
+                        >
+                            LISTENING...
+                        </div>
+
+                        <div
+                            class="orb-subtitle"
+                            id="orbSubtitle"
+                        >
+                            Speak now
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT WAVEFORM -->
+
+            <div class="side-wave right-wave">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+            <!-- TIMER -->
+
+            
+
+
+            <!-- CONTROLS -->
+
+            <div class="controls">
+
+                <button
+                    class="main-mic"
+                    id="micButton"
+                >
+                    <span>🎙</span>
+                </button>
+
+
+                <button
+                    class="stop-button"
+                    id="stopButton"
+                    type="button"
+                >
+
+                    <span class="stop-square">
+                        ■
+                    </span>
+
+                    Stop
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONVERSATION ================= -->
+
+        <section class="conversation">
+
+            <!-- USER CARD -->
+
+            <div class="message-card user-card-message">
+
+                <div class="message-top">
+
+                    <div class="message-user">
+                        You
+                    </div>
+
+                    <div
+                        class="message-time"
+                        id="userTime"
+                    >
+                        _
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="message-text"
+                    id="userText"
+                >
+                    Show me the revenue trend for this quarter.
+                </div>
+
+
+                <div class="mini-wave">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <!-- AGENT CARD -->
+
+            <div class="message-card agent-card">
+
+                <div class="message-top">
+
+                    <div class="message-user agent-name">
+                        DataForge
+                    </div>
+
+                    <div
+                        class="message-time"
+                        id="agentTime"
+                    >
+                        _
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="message-text"
+                    id="agentText"
+                >
+                    Here is the revenue trend for this quarter.
+                </div>
+
+
+                <div class="mini-wave agent-wave">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <span>
+                DATAFORGE AI
+            </span>
+
+            <span>
+                FULL-DUPLEX VOICE
+            </span>
+
+            <span>
+                RIME POWERED
+            </span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
