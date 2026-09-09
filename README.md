@@ -90,7 +90,7 @@ The result is a more natural full-duplex voice interaction.
 ### 🛡️ Fast Failure Handling
 
 - Primary Gemini model:
-  `gemini-3.6-flash`
+  `gemini-2.5-flash-lite`
 - Configurable fallback model
 - 3-second first-token timeout
 - 503 / overload detection
